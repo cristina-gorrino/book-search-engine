@@ -2,6 +2,7 @@ const {gql} = require('apollo-server-wxpress');
 
 const typeDefs = gql `
 type Book {
+    _id: ID!
     authors: [String]
     description: String!
     bookId: String!
@@ -17,6 +18,11 @@ type User {
     password: String!
     savedBooks: [Book]
 }
+
+type Auth {
+    token: ID!
+    user: User
+  }
 
 
 `
