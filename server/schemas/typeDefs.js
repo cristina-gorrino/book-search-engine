@@ -24,6 +24,25 @@ type Auth {
     user: User
   }
 
+type Query {
+    me: User
+}
 
+input savedBook {
+    authors: [String]
+    description: String!
+    title: String!
+    bookId: String!
+    image: String
+    link: String
+
+}
+
+type Mutation {
+    login (email: String!, password: String!) Auth:
+    addUser (username: String! email: String! password: String!): Auth 
+    saveBook: (input:savedBook): User
+    removeBook (bookId): User
+}
 `
 module.exports = typeDefs;
