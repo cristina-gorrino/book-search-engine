@@ -6,9 +6,9 @@ const resolvers = {
     Query: {
         // Get a single user by id or username
         // TODO: find way to use OR, maybe just need the me query
-        user: async (parent, { username, id }) => {
-            return User.findOne({ username }).populate('thoughts');
-        },
+        // user: async (parent, { username, id }) => {
+        //     return User.findOne({ username }).populate('thoughts');
+        // },
 
         // Find the current user
         me: async (parent, args, context) => {
