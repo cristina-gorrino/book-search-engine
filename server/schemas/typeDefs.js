@@ -1,4 +1,4 @@
-const {gql} = require('apollo-server-wxpress');
+const {gql} = require('apollo-server-express');
 
 const typeDefs = gql `
 type Book {
