@@ -23,7 +23,7 @@
 
 This app allows a user to search for books via the Google Books API. The user can view the search results featuring images and summaries of the books. If the user is logged in they can also save books to their profile or remove the saved books.
 
-Deployed Link:
+Deployed Link: https://lit-stream-25833.herokuapp.com/
 
 ### Visuals of the app
 
