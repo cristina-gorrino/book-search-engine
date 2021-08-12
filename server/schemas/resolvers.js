@@ -49,7 +49,7 @@ const resolvers = {
 
           },
           // Remove a book from saved books
-          deleteBook: async (parent, args, context) => {
+          removeBook: async (parent, args, context) => {
 
         }
     }
