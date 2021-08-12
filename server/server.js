@@ -4,7 +4,7 @@ const db = require('./config/connection');
 // Adding in Apollo Server for refactor
 const {ApolloServer} = require('apollo-server-express');
 // TODO: remove routes once they are replaced
-const routes = require('./routes');
+//const routes = require('./routes');
 
 const { typeDefs, resolvers } = require('./schemas');
 // Import `authMiddleware()` function to be configured with the Apollo Server
@@ -33,7 +33,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 // TODO remove after refactor
-app.use(routes);
+//app.use(routes);
 
 db.once('open', () => {
   app.listen(PORT, () => {
